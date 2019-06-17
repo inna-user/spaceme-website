@@ -1,12 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1> Заголовок</h1>
-    </body>
-</html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SpaceMe - знайди свою робочу атмосферу</title>
+	<meta name="description" content="Пошук робочого простору">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  <link rel="icon" type="image/png" href="images/icon.png"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/mainPage.css">
+  <link href="css/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  
+
+</head>
+<body class="index-page">
+<!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo" href="index.html"><img src="images/spaceMe_Logo_blue_square.png" class="logo-img"alt="SpaceMe.co"></a>
+     
+          <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <button class="hamburger hamburger--collapse" >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Головна</a></li>
+              <!--<li class="nav-item"><a class="nav-link" href="index.html">Мапа</a></li>-->
+              <li class="nav-item"><a class="nav-link" href="#contact">Про нас</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+            </ul>
+            <ul class="nav-login">
+              <!--<li class="nav-item"><a class="btn btn-outline-primary" href="./login_form.php">Вхід</a></li>-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--================ End Header Menu Area =================-->
+
+  <main class="site-main">
+    <!--================ Hero banner start =================-->
+    <section class="main-banner">
+      <div class="container">
+        <div class="row align-items-center ">
+          <div class="col-4 d-none d-lg-block">
+              <img class="" src="images/spaceMe_big_blue_square.png" alt="">
+          </div>
+          <div class="col-sm-10 col-lg-7 col-md-9 offset-sm-2 offset-md-3 offset-lg-1 pl-4 pl-sm-4 pl-lg-4 pr-4">
+            <div class="main-banner-content">
+              <h1>Пошук робочого<br>простору</h1>
+              <p>Знайди одне робоче місце, офіс, конференс зал, простір для тренінгів,<br> хоч на 1 годину.</p>
+            
+              <div class="search">
+                <input type="text" id="myInput" onclick="searchInput()" onkeyup="searchInput()" placeholder="Шукати місто...">
+                   <span class="search-button" >
+                      <a class="btn btn-outline-primary" >
+              <i class="fas fa-search"> </i>
+            </a>
+                  </span>
+                  <ul id="myUL" class="search-input-list pl-4 pl-sm-4 pl-lg-4 pr-5">
+                    <!--here we add options from bd get_city_options.php-->
+                    <li><a  id="city">Вся Україна</a></li>
+                  </ul>
+                  
+              </div>
+              <!--<a class="button button-hero" href="#">Browse Now</a>-->
+          
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+  </main>
+  <!--================ Hero banner start =================-->
+
+   <!--================ Main page content =================-->
+  <section class="container">
+    <div class="main-page-body col-md-12 mb-4">
+       <div id="includedContent"></div>
+
+      
+      <!--<div id="article-panel" class="mb-5">
+        <div class="card flex-md-row mb-4 h-md-250 shadow-sm bg-white">
+          <img class="centered-and-cropped flex-auto d-block " data-src="holder.js/200x250?theme=thumb" alt="office [200x250]"  src="./images/coworkingsPhotos/leonardo-101-800x500.jpg">
+          <div class="card-body d-flex flex-column align-items-start">             
+            <h3 class="mb-1">
+              <strong class="text-dark" href="#">ПЛАТФОРМА ЛЕОНАРДО</strong>
+            </h3>            
+            <div class="mb-1 text-muted text-info">Київ | Бер 3</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Продовжити читання</a>
+          </div> 
+        </div>
+      </div>
+
+      <div id="article-panel" class="mb-5">
+        <div class="card flex-md-row mb-4 h-md-250 shadow-sm bg-white">
+          <img class="centered-and-cropped flex-auto d-block " data-src="holder.js/200x250?theme=thumb" alt="office [200x250]"  src="./images/coworkingsPhotos/leonardo-101-800x500.jpg">
+          <div class="card-body d-flex flex-column align-items-start">             
+            <h3 class="mb-1">
+              <strong class="text-dark" href="#">ПЛАТФОРМА ЛЕОНАРДО</strong>
+            </h3>            
+            <div class="mb-1 text-muted text-info">Київ | Бер 3</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a href="#">Продовжити читання</a>
+          </div> 
+        </div>
+      </div>-->
+    </div>
+  </section>
+    <!--================ Main page content =================-->
+  
+  <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+    <div class="footer-social-media">
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Зв'яжіться з нами в соціальних мережах!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right social-icons">
+            <!-- Facebook -->
+            <a class="fb-ic" href="#">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic"  href="#">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic"  href="#">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic"  href="#">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic"  href="#">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-6 col-xl-5 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">spaceme</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" >
+          <h6 class="text-uppercase font-weight-bold">від 1 особи</h6>
+          <h6 class="text-uppercase font-weight-bold">від 1 години</h6>
+          <p>Тут ви знайдете затишне місце для роботи. Обери місто, перейди на сторінку коворкінгу та дізнайся всю необхідну інформацію. </p>
+        </div>
+        <!-- Grid column -->
+    
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Посилання</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+          <p><a href="#!">Головна<!--Ваш акаунт--></a></p>
+          <!--<p><a href="#!">Мапа</a></p>-->
+          <p><a href="#!">Про нас</a></p>
+          <p><a href="#!">Privacy policy</a> </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="contact">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+          <p><i class="fas fa-home mr-3"></i>Kyiv 03134, Ukraine</p>
+          <p><i class="fas fa-envelope mr-3"></i> info@spaceme.com</p>
+          <p><i class="fas fa-phone mr-3"></i> + 38 097 234 56</p>
+          <p><i class="fas fa-print mr-3"></i> + 38 044 523 15</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© <span class="footer-year"></span> Copyright:
+      <a href="#"> spaceme.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+ <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js" ></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <!--get cities' options for search-->
+  <script src="js/mainPageGetSearchOptionsAjax.js" type="text/javascript"></script>
+   <!--get coworkings' panels -->
+  <script src="js/mainPageSetCoworkingPanelsAjax.js" type="text/javascript"></script>
+  <script src="js/mainPageSearchInputScript.js" type="text/javascript"></script>
+
+</body></html>

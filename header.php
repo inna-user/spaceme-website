@@ -1,0 +1,33 @@
+<!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo" href="index.html"><img src="images/spaceMe_Logo_blue_square.png" class="logo-img"alt="SpaceMe.co"></a>
+     
+          <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <button class="hamburger hamburger--collapse" >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Головна</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Мапа</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Про нас</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+            </ul>
+            <ul class="nav-login">
+              <li class="nav-item"><a class="btn btn-outline-primary" href="./login_form.php">Вхід</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--================ End Header Menu Area =================-->

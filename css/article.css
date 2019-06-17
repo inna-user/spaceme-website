@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+h1 { color: #111; font-family: 'Roboto', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+
+h2 { color: #111; font-family: 'Roboto', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+
+h4 { color: #111; font-family: 'Roboto', sans-serif; font-size: 16px!important; font-weight: 300; line-height: 10px; letter-spacing: 5px!important; margin: 0 !important; text-align: center; }
+
+
+#title-and-cards{   
+    background-image: url(../images/main-banner1.png) no-repeat 0;
+    background-image: linear-gradient(to bottom, rgba(107,112,255,1) 30%,rgba(200,200,200,0.4) 90%), url(../images/article-banner.png);
+    /* width: 100%; */
+    background-size: cover;
+    height: 499px;
+    /* z-index: -100; */
+    /* margin: 0; */
+    /* overflow: hidden; */
+    /* padding: 10px 10px; */
+    /* width: 996px; */
+
+}
+.title-bar{
+	padding-top: 120px!important;
+}
+@media (max-width: 567px){
+	.title-bar{
+		padding-top: 100px!important;
+	}
+}
+
+
+/* ------------title bar views score  lastupdate------- */
+#title-bar-info{
+	padding-top: 10px;
+}
+#title-bar-info table {  
+  border-collapse: collapse;
+ 
+}
+#title-bar-info th {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff; 
+  border: 2px solid ;
+  border-color: #ddd;
+  width: 33%;
+}
+@media (max-width: 991px){
+	#title-bar-info th {
+		width: 40%;
+	}
+	#title-bar-info tr th:first-child {
+	 width: 30%;
+	}
+	#title-bar-info tr th:last-child {
+	  width: 30%;
+	}
+}
+
+
+#title-bar-info tr:first-child th {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+#title-bar-info tr th:first-child {
+  border-left: 0;
+}
+#title-bar-info tr th:last-child {
+  border-right: 0;
+}
+
+#views i {
+	display: inline;
+	padding-right: 5px;
+}
+
+.checked {
+  color: #FBBC05;
+}
+
+
+#score span {
+	display: inline;
+	padding-bottom:  2px;
+}
+
+/* ------------price location cards------- */
+
+.card-deck {
+	overflow: hidden;
+    /* width: 960px; */
+    /* height: 520px; */
+    /* min-width: 960px; */
+    z-index: 9998!important;
+
+	padding-top: 60px!important; 
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    
+}
+li.list-group-item span{
+	width: 50%;
+	display: inline-block;
+}
+@media (max-width: 567px){
+	.card-deck {
+		padding-top: 30px!important; 
+	}
+}
+
+/* ------------article-body------- */
+#short-discription {
+	margin: 40px 10px;
+    font-size: 16px;
+}
+
+.article-slider {
+	margin: 40px 10px;
+}
+#full-discription {
+	margin: 40px 10px;
+    font-size: 16px;
+}

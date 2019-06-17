@@ -1,0 +1,40 @@
+
+/*
+#384aeb
+#4d5fea
+#6b70ff
+#b7bbff
+#F1F6F7
+#ffffff
+#555555
+#222
+*/
+
+
+/*--------------footer--------------*/
+footer {
+ background-color: #4d5fea;
+ color: #F1F6F7;
+}
+footer hr{
+  width: 60px;
+  border-color:#F1F6F7;
+  color:#F1F6F7;
+  backgroung-color:#F1F6F7;
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+  color: white;
+  font-weight: bold;
+}
+.footer-social-media{
+  background-color: #384aeb;
+}
+.social-icons a:hover{
+  text-decoration: none;
+}
+.footer-copyright{
+  background-color: #6b70ff;
+}
